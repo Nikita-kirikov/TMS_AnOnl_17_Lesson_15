@@ -11,7 +11,7 @@ public class Producer extends Thread{
     public void run() {
         while (!interrupted() && isAlive()) {
             synchronized (supply) {
-                int currentIndex = supply.getCurrentindex();
+                int currentIndex = supply.getCurrentIndex();
                 int[] arr = supply.getArr();
                 if (currentIndex != supply.getArr().length - 1) {
                         arr[currentIndex] = (int) (Math.random() * 20);

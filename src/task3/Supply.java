@@ -1,23 +1,23 @@
 package task3;
 
 public class Supply {
-    private int[] arr = new int[10];
+    private final int[] arr = new int[10];
 
-    private int currentindex = 0;
+    private int currentIndex = 0;
 
     public int[] getArr() {
         return arr;
     }
 
-    public int getCurrentindex() {
-        return currentindex;
+    public int getCurrentIndex() {
+        return currentIndex;
     }
 
     public void incrementIndex() {
-        currentindex++;
+        currentIndex++;
     }
 
     public  void decrementIndex() {
-        currentindex--;
+        currentIndex--;
     }
 }

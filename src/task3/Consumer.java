@@ -11,7 +11,7 @@ public class Consumer extends Thread {
     public void run() {
         while (!interrupted() && isAlive()) {
             synchronized (supply) {
-                int currentIndex = supply.getCurrentindex();
+                int currentIndex = supply.getCurrentIndex();
                 if (currentIndex != 0) {
                         supply.decrementIndex();
                         int item = supply.getArr()[currentIndex];
